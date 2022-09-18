@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+}
+
+.main-container{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+.logo{
+    width: 40px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+}
+.content{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: auto;
+width: 80%;
+}
+.content .text{
+    color: white;
+    width: 40%;
+    
+}
+.content .text h2{
+    font-size: 40px;
+}
+.content .text p{
+    font-size: 18px;
+    line-height: 2;
+    margin: 20px 0;
+}
+.content .text a{
+    color: black;
+    text-decoration: none;
+    padding: 8px 15px;
+    background: white;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.content .prod-img{
+width: 30%;
+}
+.content .prod-img img{
+    width: 180px;
+}
+
+.icons{
+
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.icons img{
+    width: 50px;
+    margin: 0 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.icons img:hover{
+transform: scale(1.2);
+margin-bottom: 30px;
+}
+
+@media (max-width:391px) {
+    .content{
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .content .text {
+        text-align: center;
+        color: white;
+        width: 100%;
+    }
+    .content .prod-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .content .prod-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+    }
+    .icons{
+        text-align: center;
+        display: flex;
+    }
+    .icons img{
+        margin-left: 10px;
+    }
+    .icons img:hover{
+        transform: scale(1);
+        margin-bottom: 0px;
+    }
+    .header ul li a {
+        margin: 0 5px;
+        font-size: 12px;
+    }
+}
+@media (max-width:735px) {
+    ul li a {
+        font-size: 15px;
+        margin: 0 5px;
+    }
+    .content .text {
+        width: 60%;
+    }
+    .content .prod-img img {
+        width: 150px;
+    }
+    .icons {
+        display: flex;
+    }
+    .icons img:hover{
+        transform: scale(1.2);
+        margin-bottom: 0px;
+        }
+}
