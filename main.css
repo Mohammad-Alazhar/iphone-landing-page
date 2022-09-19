@@ -103,6 +103,7 @@ margin-bottom: 30px;
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 120px;
     }
     .content .prod-img {
         display: flex;
